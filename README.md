@@ -9,7 +9,12 @@ This project has basically two parts.
 
 ## How to use?
 Go the directory of project --> Open Terminal
-'''
+```
 usr@username:/user/project_dir$make
-'''
+```
+So, this will make filename.ko (in our case joytomouse.ko)
+now run this command
+```
+usr@username:/user/project_dir$sudo insmode joytomouse.ko
+```
 
