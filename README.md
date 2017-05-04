@@ -12,9 +12,15 @@ Go the directory of project --> Open Terminal
 ```
 usr@username:/user/project_dir$make
 ```
-So, this will make filename.ko (in our case joytomouse.ko)
+So, this will make filename.ko (in our case joy2mouse.ko)
 now run this command
 ```
-usr@username:/user/project_dir$sudo insmode joytomouse.ko
+usr@username:/user/project_dir$sudo insmode joy2mouse.ko
 ```
-
+Now this will load the module.
+Now to activate the driver
+```
+usr@username:/user/project_dir$ls -l /dev/input | grep js2ms   #take the maximum number from here
+usr@username:/user/project_dir$cat /dev/input/js2ms#/           #for ex. js2ms0 js2ms1 then replace # with 1.
+```
+Now you are good and enjoy!
